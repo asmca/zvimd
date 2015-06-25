@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/suse/workspace/asmlib/oracleasm'
+let g:netrw_dirhist_2='/home/suse/workspace/mysql-5.1.34/storage'
+let g:netrw_dirhist_3='/home/suse/workspace/mysql-5.1.34'
+let g:netrw_dirhist_4='/home/suse/workspace/asm_sc'
+let g:netrw_dirhist_5='/home/suse/.vim'
