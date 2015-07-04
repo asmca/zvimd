@@ -31,6 +31,14 @@ Bundle 'EasyGrep'
 Bundle 'VOoM'
 Bundle 'VimIM'
 
+" following old repo used by suse
+Bundle 'winmanager'
+Bundle 'scrooloose/nerdtree' 
+" Bundle 'vimscript/c-support'
+Bundle "c.vim"
+Bundle 'taglist.vim'
+Bundle 'minibufexplorerpp'
+
 
 Bundle 'honza/vim-snippets'
 "..................................
@@ -70,3 +78,31 @@ nmap <F4> :YcmDiags<CR>
 let g:ycm_global_ycm_extra_conf = '/home/suse/.vim/.ycm_extra_conf.py'
 let g:ycm_key_invoke_completion = '<S-Space>'
 
+
+
+
+"  F7 NERDTree added by suse
+map <F7> :NERDTreeToggle<CR>
+imap <F7> <ESC>:NERDTreeToggle<CR>
+
+
+
+
+" Added for Taglist
+let Tlist_Use_SingleClick=1
+let Tlist_File_Fold_Auto_Close=1
+"
+" """"""""""""""""""""""""""""""
+" " winManager setting
+" """"""""""""""""""""""""""""""
+let g:winManagerWindowLayout = "BufExplorer,FileExplorer|TagList"
+let g:winManagerWidth = 30
+let g:defaultExplorer = 0
+"
+"
+nmap <C-W><C-F> :FirstExplorerWindow<cr>
+nmap <C-W><C-B> :BottomExplorerWindow<cr>
+nmap <C-W><C-T> :WMToggle<cr>
+
+
+map <F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
